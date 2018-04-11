@@ -7,7 +7,7 @@ button.addEventListener('click', function() {
   // add new elemnet
   var newElement = document.createElement('li');
   // count how much the item is on the page
-  var number = document.getElementsByTagName('li').length;
+  var number = list.getElementsByTagName('li').length;
   // and count: number a new element 'item'
   var nowNumber = number + 1;
   // change content a new element: 'item' and number of item
@@ -17,3 +17,11 @@ button.addEventListener('click', function() {
   list.appendChild(newElement);
 
 });
+
+//  another entry
+// button.addEventListener('click', function() {
+//   var newElement = document.createElement('li');
+//   var number = list.getElementsByTagName('li');
+//   newElement.innerHTML = 'item' + (number.length + 1);
+//   list.appendChild(newElement);
+// });
